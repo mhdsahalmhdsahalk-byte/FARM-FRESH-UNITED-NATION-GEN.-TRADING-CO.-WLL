@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Rai-shak (Mustasa)", img: "assets/rai_shak.png" },
         { name: "Poysaag (m/s)", img: "assets/poysaag.png" },
         { name: "Molokhiya", img: "assets/molokhiya.png" },
-        { name: "Peachay", img: "https://loremflickr.com/500/400/bok,choy" },
+        { name: "Peachay", img: "assets/Peachay.jpg" },
         { name: "Kangoone", img: "assets/Kangoone.jpg" },
         { name: "Kangongur (Hambada Baji)", img: "assets/Kangongur (Hambada Baji).jpg" },
         { name: "Lady Finger", img: "assets/ledis finger.jpg" },
