@@ -103,20 +103,20 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Poysaag (m/s)", img: "assets/poysaag.png" },
         { name: "Molokhiya", img: "assets/molokhiya.png" },
         { name: "Peachay", img: "https://loremflickr.com/500/400/bok,choy" },
-        { name: "Kangoone", img: "https://loremflickr.com/500/400/water,spinach" },
-        { name: "Kangongur (Hambada Baji)", img: "https://loremflickr.com/500/400/kangkong" },
-        { name: "Lady Finger", img: "https://loremflickr.com/500/400/okra" },
+        { name: "Kangoone", img: "assets/Kangoone.jpg" },
+        { name: "Kangongur (Hambada Baji)", img: "assets/Kangongur (Hambada Baji).jpg" },
+        { name: "Lady Finger", img: "assets/ledis finger.jpg" },
         { name: "Bitter Guard (Long)", img: "https://loremflickr.com/500/400/bitter,melon" },
         { name: "Bitter Guard (Small)", img: "https://loremflickr.com/500/400/bitter,gourd" },
-        { name: "Lemon Grass", img: "https://loremflickr.com/500/400/lemongrass" },
-        { name: "Brinjal (Purple)", img: "https://loremflickr.com/500/400/eggplant,purple" },
-        { name: "Brinjal Star", img: "https://loremflickr.com/500/400/eggplant" },
-        { name: "Brinjal Green", img: "https://loremflickr.com/500/400/thai,eggplant" },
+        { name: "Lemon Grass", img: "assets/Lemon Grass.jpg" },
+        { name: "Brinjal (Purple)", img: "assets/Brinjal (Purple).jpg" },
+        { name: "Brinjal Star", img: "assets/Brinjal Star.webp" },
+        { name: "Brinjal Green", img: "assets/Brinjal Green.webp" },
         { name: "Thoray", img: "https://loremflickr.com/500/400/ridge,gourd" },
         { name: "Dandool", img: "https://loremflickr.com/500/400/sponge,gourd" },
-        { name: "Bad Badi (Long Beens)", img: "https://loremflickr.com/500/400/yardlong,bean" },
-        { name: "Long Kaddu", img: "https://loremflickr.com/500/400/bottle,gourd" },
-        { name: "Seem", img: "https://loremflickr.com/500/400/hyacinth,bean" }
+        { name: "Bad Badi (Long Beens)", img: "assets/Bad Badi (Long Beens).webp" },
+        { name: "Long Kaddu", img: "assets/Long Kaddu.jpg" },
+        { name: "Seem", img: "assets/Seem.webp" }
     ];
 
     const productsGrid = document.getElementById('dynamic-products-grid');
