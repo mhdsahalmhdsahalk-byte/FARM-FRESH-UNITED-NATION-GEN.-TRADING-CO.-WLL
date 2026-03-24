@@ -28,6 +28,10 @@
   --nav-height: 80px;
 }
 
+.cambria-text {
+  font-family: 'Cambria', Georgia, serif;
+}
+
 /* Reset & BaseStyles */
 * {
   margin: 0;
