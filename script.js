@@ -85,4 +85,69 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeElements.forEach(element => {
         observer.observe(element);
     });
+
+    // Render 30 Products Dynamically
+    const productsData = [
+        { name: "Rocket", img: "assets/rocket_arugula_1774323536447.png" },
+        { name: "Parsley", img: "assets/parsley_leaves_1774323558206.png" },
+        { name: "Coriander", img: "assets/coriander_leaves_1774323574755.png" },
+        { name: "Mint", img: "assets/mint_leaves_1774323590746.png" },
+        { name: "Shabanth", img: "assets/dill_leaves_1774323609057.png" },
+        { name: "Spinach", icon: "fa-leaf" },
+        { name: "Spring Onion", img: "assets/spring_onion_1774323624797.png" },
+        { name: "Curry Leaves", icon: "fa-leaf" },
+        { name: "SCRAPED COCONUT", icon: "fa-bowl-rice" }, /* Using a bowl/nature icon as fallback */
+        { name: "Drumstick Leaves", icon: "fa-leaf" },
+        { name: "Lalshak (Cheera)", icon: "fa-leaf" },
+        { name: "Green Shak", icon: "fa-leaf" },
+        { name: "Rai-shak (Mustasa)", icon: "fa-leaf" },
+        { name: "Poysaag (m/s)", icon: "fa-leaf" },
+        { name: "Molokhiya", icon: "fa-leaf" },
+        { name: "Peachay", icon: "fa-leaf" },
+        { name: "Kangoone", icon: "fa-leaf" },
+        { name: "Kangongur (Hambada Baji)", icon: "fa-leaf" },
+        { name: "Lady Finger", icon: "fa-pepper-hot" },
+        { name: "Bitter Guard (Long)", icon: "fa-carrot" },
+        { name: "Bitter Guard (Small)", icon: "fa-carrot" },
+        { name: "Lemon Grass", icon: "fa-seedling" },
+        { name: "Brinjal (Purple)", icon: "fa-apple-whole" },
+        { name: "Brinjal Star", icon: "fa-apple-whole" },
+        { name: "Brinjal Green", icon: "fa-apple-whole" },
+        { name: "Thoray", icon: "fa-seedling" },
+        { name: "Dandool", icon: "fa-seedling" },
+        { name: "Bad Badi (Long Beens)", icon: "fa-carrot" },
+        { name: "Long Kaddu", icon: "fa-carrot" },
+        { name: "Seem", icon: "fa-seedling" }
+    ];
+
+    const productsGrid = document.getElementById('dynamic-products-grid');
+    if (productsGrid) {
+        productsData.forEach((product, index) => {
+            const delayClass = (index % 3 === 1) ? 'delay-1' : (index % 3 === 2) ? 'delay-2' : '';
+            
+            let visualHTML = '';
+            if (product.img) {
+                visualHTML = `<img src="${product.img}" alt="${product.name}">`;
+            } else {
+                visualHTML = `<div class="product-icon-bg"><i class="fa-solid ${product.icon}"></i></div>`;
+            }
+
+            const cardHTML = `
+                <div class="product-card fade-up ${delayClass}">
+                    <div class="product-img">
+                        ${visualHTML}
+                    </div>
+                    <div class="product-info">
+                        <h3>${product.name}</h3>
+                    </div>
+                </div>
+            `;
+            productsGrid.insertAdjacentHTML('beforeend', cardHTML);
+        });
+
+        // Re-observe newly injected elements for scroll animation
+        const newFadeElements = productsGrid.querySelectorAll('.fade-up');
+        newFadeElements.forEach(el => observer.observe(el));
+    }
+
 });
