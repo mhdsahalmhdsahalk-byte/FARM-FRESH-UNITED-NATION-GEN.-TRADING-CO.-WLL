@@ -88,35 +88,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Render 30 Products Dynamically
     const productsData = [
-        { name: "Rocket (جرجير)", img: "assets/rocket_arugula_1774323536447.png" },
-        { name: "Parsley (بقدونس)", img: "assets/parsley_leaves_1774323558206.png" },
-        { name: "Coriander (كزبرة)", img: "assets/coriander_leaves_1774323574755.png" },
-        { name: "Mint (نعناع)", img: "assets/mint_leaves_1774323590746.png" },
-        { name: "Shabanth (شبت)", img: "assets/dill_leaves_1774323609057.png" },
-        { name: "Spinach (سبانخ)", img: "assets/spinach.png" },
-        { name: "Curry Leaves (أوراق الكاري)", img: "assets/curry_leaves.png" },
-        { name: "SCRAPED COCONUT (جوز الهند المبشور)", img: "assets/scraped_coconut.png" },
-        { name: "Drumstick Leaves (أوراق المورينجا)", img: "assets/drumstick_leaves.png" },
-        { name: "Lalshak (Cheera) (لالشاك (شيرا))", img: "assets/lalshak.png" },
-        { name: "Green Shak (شاك أخضر)", img: "assets/green_shak.png" },
-        { name: "Rai-shak (Mustasa) (راي-شاك (مستاسا))", img: "assets/rai_shak.png" },
-        { name: "Poysaag (m/s) (بويساج)", img: "assets/poysaag.png" },
-        { name: "Molokhiya (ملوخية)", img: "assets/molokhiya.png" },
-        { name: "Peachay (بيتشاي)", img: "assets/Peachay.jpg" },
-        { name: "Kangoone (كانجون)", img: "assets/water spinach.jpg" },
-        { name: "Kangongur (Hambada Baji) (كانجونجور (هامبادا باجي))", img: "assets/Kangongur (Hambada Baji).jpg" },
-        { name: "Lady Finger (بامية)", img: "assets/ledis finger.jpg" },
-        { name: "Bitter Guard (Long) (قرع مر (طويل))", img: "assets/Bitter Guard (Long).webp" },
-        { name: "Bitter Guard (Small) (قرع مر (صغير))", img: "assets/BitterGourd-Small.webp" },
-        { name: "Lemon Grass (عشب الليمون)", img: "assets/Lemon Grass.jpg" },
-        { name: "Brinjal (Purple) (باذنجان (بنفسجي))", img: "assets/Brinjal (Purple).jpg" },
-        { name: "Brinjal Star (باذنجان نجمي)", img: "assets/Brinjal Star.webp" },
-        { name: "Brinjal Green (باذنجان أخضر)", img: "assets/Brinjal Green.webp" },
-        { name: "Thoray (ثوراي)", img: "assets/Thoray.jpg" },
-        { name: "Dandool (داندول)", img: "assets/Dandool.webp" },
-        { name: "Bad Badi (Long Beens) (باد بادي (فاصوليا طويلة))", img: "assets/Bad Badi (Long Beens).webp" },
-        { name: "Long Kaddu (كادو طويل)", img: "assets/Long Kaddu.jpg" },
-        { name: "Seem (سيم)", img: "assets/Seem.webp" }
+        { nameEn: "Rocket", nameAr: "(جرجير)", img: "assets/rocket_arugula_1774323536447.png" },
+        { nameEn: "Parsley", nameAr: "(بقدونس)", img: "assets/parsley_leaves_1774323558206.png" },
+        { nameEn: "Coriander", nameAr: "(كزبرة)", img: "assets/coriander_leaves_1774323574755.png" },
+        { nameEn: "Mint", nameAr: "(نعناع)", img: "assets/mint_leaves_1774323590746.png" },
+        { nameEn: "Shabanth", nameAr: "(شبت)", img: "assets/dill_leaves_1774323609057.png" },
+        { nameEn: "Spinach", nameAr: "(سبانخ)", img: "assets/spinach.png" },
+        { nameEn: "Curry Leaves", nameAr: "(أوراق الكاري)", img: "assets/curry_leaves.png" },
+        { nameEn: "SCRAPED COCONUT", nameAr: "(جوز الهند المبشور)", img: "assets/scraped_coconut.png" },
+        { nameEn: "Drumstick Leaves", nameAr: "(أوراق المورينجا)", img: "assets/drumstick_leaves.png" },
+        { nameEn: "Lalshak (Cheera)", nameAr: "(لالشاك (شيرا))", img: "assets/lalshak.png" },
+        { nameEn: "Green Shak", nameAr: "(شاك أخضر)", img: "assets/green_shak.png" },
+        { nameEn: "Rai-shak (Mustasa)", nameAr: "(راي-شاك (مستاسا))", img: "assets/rai_shak.png" },
+        { nameEn: "Poysaag (m/s)", nameAr: "(بويساج)", img: "assets/poysaag.png" },
+        { nameEn: "Molokhiya", nameAr: "(ملوخية)", img: "assets/molokhiya.png" },
+        { nameEn: "Peachay", nameAr: "(بيتشاي)", img: "assets/Peachay.jpg" },
+        { nameEn: "Kangoone", nameAr: "(كانجون)", img: "assets/water spinach.jpg" },
+        { nameEn: "Kangongur (Hambada Baji)", nameAr: "(كانجونجور (هامبادا باجي))", img: "assets/Kangongur (Hambada Baji).jpg" },
+        { nameEn: "Lady Finger", nameAr: "(بامية)", img: "assets/ledis finger.jpg" },
+        { nameEn: "Bitter Guard (Long)", nameAr: "(قرع مر (طويل))", img: "assets/Bitter Guard (Long).webp" },
+        { nameEn: "Bitter Guard (Small)", nameAr: "(قرع مر (صغير))", img: "assets/BitterGourd-Small.webp" },
+        { nameEn: "Lemon Grass", nameAr: "(عشب الليمون)", img: "assets/Lemon Grass.jpg" },
+        { nameEn: "Brinjal (Purple)", nameAr: "(باذنجان (بنفسجي))", img: "assets/Brinjal (Purple).jpg" },
+        { nameEn: "Brinjal Star", nameAr: "(باذنجان نجمي)", img: "assets/Brinjal Star.webp" },
+        { nameEn: "Brinjal Green", nameAr: "(باذنجان أخضر)", img: "assets/Brinjal Green.webp" },
+        { nameEn: "Thoray", nameAr: "(ثوراي)", img: "assets/Thoray.jpg" },
+        { nameEn: "Dandool", nameAr: "(داندول)", img: "assets/Dandool.webp" },
+        { nameEn: "Bad Badi (Long Beens)", nameAr: "(باد بادي (فاصوليا طويلة))", img: "assets/Bad Badi (Long Beens).webp" },
+        { nameEn: "Long Kaddu", nameAr: "(كادو طويل)", img: "assets/Long Kaddu.jpg" },
+        { nameEn: "Seem", nameAr: "(سيم)", img: "assets/Seem.webp" }
     ];
 
     const productsGrid = document.getElementById('dynamic-products-grid');
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             let visualHTML = '';
             if (product.img) {
-                visualHTML = `<img src="${product.img}" alt="${product.name}">`;
+                visualHTML = `<img src="${product.img}" alt="${product.nameEn}">`;
             } else {
                 visualHTML = `<div class="product-icon-bg"><i class="fa-solid ${product.icon}"></i></div>`;
             }
@@ -136,8 +136,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="product-img">
                         ${visualHTML}
                     </div>
-                    <div class="product-info">
-                        <h3>${product.name}</h3>
+                    <div class="product-info" style="text-align: center;">
+                        <h3 style="margin-bottom: 5px;">${product.nameEn}</h3>
+                        <h4 style="color: var(--primary-green); font-size: 1.1rem; font-weight: 500;">${product.nameAr}</h4>
                     </div>
                 </div>
             `;
