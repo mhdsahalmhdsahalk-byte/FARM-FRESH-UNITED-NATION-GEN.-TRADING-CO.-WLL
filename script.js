@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Brinjal (Purple)", img: "assets/Brinjal (Purple).jpg" },
         { name: "Brinjal Star", img: "assets/Brinjal Star.webp" },
         { name: "Brinjal Green", img: "assets/Brinjal Green.webp" },
-        { name: "Thoray", img: "https://loremflickr.com/500/400/ridge,gourd" },
+        { name: "Thoray", img: "assets/Thoray.jpg" },
         { name: "Dandool", img: "https://loremflickr.com/500/400/sponge,gourd" },
         { name: "Bad Badi (Long Beens)", img: "assets/Bad Badi (Long Beens).webp" },
         { name: "Long Kaddu", img: "assets/Long Kaddu.jpg" },
