@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Poysaag (m/s)", img: "assets/poysaag.png" },
         { name: "Molokhiya", img: "assets/molokhiya.png" },
         { name: "Peachay", img: "assets/Peachay.jpg" },
-        { name: "Kangoone", img: "assets/Kangoone.jpg" },
+        { name: "Kangoone", img: "assets/water spinach.jpg" },
         { name: "Kangongur (Hambada Baji)", img: "assets/Kangongur (Hambada Baji).jpg" },
         { name: "Lady Finger", img: "assets/ledis finger.jpg" },
         { name: "Bitter Guard (Long)", img: "https://loremflickr.com/500/400/bitter,melon" },
