@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Kangongur (Hambada Baji)", img: "assets/Kangongur (Hambada Baji).jpg" },
         { name: "Lady Finger", img: "assets/ledis finger.jpg" },
         { name: "Bitter Guard (Long)", img: "https://loremflickr.com/500/400/bitter,melon" },
-        { name: "Bitter Guard (Small)", img: "https://loremflickr.com/500/400/bitter,gourd" },
+        { name: "Bitter Guard (Small)", img: "assets/BitterGourd-Small.webp" },
         { name: "Lemon Grass", img: "assets/Lemon Grass.jpg" },
         { name: "Brinjal (Purple)", img: "assets/Brinjal (Purple).jpg" },
         { name: "Brinjal Star", img: "assets/Brinjal Star.webp" },
