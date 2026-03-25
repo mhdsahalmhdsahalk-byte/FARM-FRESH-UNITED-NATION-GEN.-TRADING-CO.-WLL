@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="product-info" style="text-align: center;">
                         <h3 style="margin-bottom: 5px;">${product.nameEn}</h3>
-                        <h4 style="color: var(--primary-green); font-size: 1.1rem; font-weight: 500;">${product.nameAr}</h4>
+                        <h4 style="color: var(--primary-green); font-size: 1.1rem; font-weight: bold;">${product.nameAr}</h4>
                     </div>
                 </div>
             `;
