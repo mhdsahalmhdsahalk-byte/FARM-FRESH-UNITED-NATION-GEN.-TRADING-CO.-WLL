@@ -129,37 +129,55 @@ img {
 /* Buttons */
 .btn {
   display: inline-block;
-  padding: 12px 28px;
-  border-radius: 30px;
-  font-family: var(--font-heading);
+  padding: 14px 32px;
+  border-radius: 50px;
   font-weight: 600;
-  font-size: 1rem;
-  text-align: center;
-  cursor: pointer;
-  border: 2px solid transparent;
+  text-decoration: none;
   transition: var(--transition);
+  cursor: pointer;
+  border: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+  background-color: var(--primary-green);
   color: var(--white);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 4px 15px rgba(46, 125, 50, 0.2);
 }
 
 .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
+  background-color: #1b5e20;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(46, 125, 50, 0.3);
 }
 
-.btn-outline {
-  border-color: var(--primary-green);
+.btn-light {
+  background-color: var(--white);
   color: var(--primary-green);
-  background-color: transparent;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.btn-outline:hover {
-  background-color: var(--primary-green);
-  color: var(--white);
+.btn-light:hover {
+  background-color: var(--bg-light);
+  transform: translateY(-2px);
+}
+
+.btn-cta {
+  background-color: #FF9800;
+  color: #fff;
+  font-weight: 700;
+  padding: 18px 45px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
+}
+
+.btn-cta:hover {
+  background-color: #F57C00;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 152, 0, 0.6);
+  color: #fff;
 }
 
 .btn-outline-light {
@@ -262,14 +280,16 @@ header {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
-  min-height: 600px;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-top: var(--nav-height);
   position: relative;
   overflow: hidden;
+  background-image: linear-gradient(rgba(10, 35, 12, 0.8), rgba(46, 125, 50, 0.4)), url('https://loremflickr.com/1920/1080/lush,green,leaves');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  padding-top: var(--nav-height);
 }
 
 .hero-bg {
@@ -278,34 +298,38 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(46, 125, 50, 0.8), rgba(27, 94, 32, 0.85)), url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
-  z-index: -1;
+  background: radial-gradient(circle at top right, rgba(165, 214, 167, 0.1) 0%, transparent 60%);
+  pointer-events: none;
 }
 
 .hero-content {
-  text-align: center;
-  color: var(--white);
+  position: relative;
+  z-index: 2;
   max-width: 800px;
 }
 
 .hero-title {
   font-size: 4.5rem;
-  color: var(--white);
-  margin-bottom: 10px;
-  text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .hero-tagline {
-  font-size: 1.8rem;
-  color: var(--light-green);
+  font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  color: var(--light-green);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero-desc {
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-  opacity: 0.9;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 45px;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .hero-cta {
@@ -807,16 +831,16 @@ header {
   .contact-wrapper {
     grid-template-columns: 1fr;
   }
-  
+
   .hero-title {
     font-size: 3.5rem;
   }
-  
+
   .why-image {
     height: 400px;
     order: -1;
   }
-  
+
   .about-image {
     order: -1;
   }
@@ -826,7 +850,7 @@ header {
   .mobile-toggle {
     display: block;
   }
-  
+
   #nav-menu {
     position: absolute;
     top: var(--nav-height);
@@ -837,29 +861,37 @@ header {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: clip-path 0.4s ease-in-out;
   }
-  
+
   #nav-menu.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-  
+
   .nav-links {
     flex-direction: column;
     padding: 30px;
     gap: 20px;
   }
-  
+
   .hero-title {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
-  
+
   .hero-tagline {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
-  
+
+  .hero-desc {
+    font-size: 1.1rem;
+  }
+
+  .btn-cta {
+    padding: 14px 30px;
+    font-size: 1.1rem;
+  }
+
   .hero-cta {
     flex-direction: column;
   }
-  
   .section {
     padding: 70px 0;
   }
