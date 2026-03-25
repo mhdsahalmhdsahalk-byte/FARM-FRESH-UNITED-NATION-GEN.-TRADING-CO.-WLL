@@ -887,28 +887,3 @@ header {
     padding: 25px;
   }
 }
-
-/* Floating WhatsApp Button */
-.floating-whatsapp {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #25D366;
-  color: white;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 35px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-decoration: none;
-}
-.floating-whatsapp:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
-  color: white;
-}
