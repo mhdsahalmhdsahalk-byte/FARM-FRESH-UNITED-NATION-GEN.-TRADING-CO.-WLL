@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Brinjal Star", img: "assets/Brinjal Star.webp" },
         { name: "Brinjal Green", img: "assets/Brinjal Green.webp" },
         { name: "Thoray", img: "assets/Thoray.jpg" },
-        { name: "Dandool", img: "https://loremflickr.com/500/400/sponge,gourd" },
+        { name: "Dandool", img: "assets/Dandool.webp" },
         { name: "Bad Badi (Long Beens)", img: "assets/Bad Badi (Long Beens).webp" },
         { name: "Long Kaddu", img: "assets/Long Kaddu.jpg" },
         { name: "Seem", img: "assets/Seem.webp" }
